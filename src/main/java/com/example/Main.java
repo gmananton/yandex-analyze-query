@@ -11,7 +11,6 @@ public class Main {
     static final int BUFFER_SIZE = 1000000;
     static final int THREADS_COUNT = 100;
 
-    @SneakyThrows
     public static void main(String[] args) {
 
 
