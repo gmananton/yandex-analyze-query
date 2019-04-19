@@ -1,0 +1,20 @@
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "cglib:cglib:3.2.9"
+    compile "javax.cache:cache-api:1.0.0"
+    compile "org.projectlombok:lombok:1.16.20"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.7'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
+    testCompile "com.hazelcast:hazelcast:3.9-EA"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
