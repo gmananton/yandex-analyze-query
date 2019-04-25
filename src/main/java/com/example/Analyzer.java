@@ -15,7 +15,7 @@ import static java.util.stream.Collectors.toMap;
 
 public class Analyzer {
 
-    static double THRESHOLD = 0.05;
+    static double THRESHOLD = 0.02;
 
     String FILE_PATH = "/Users/gman/Downloads/football";
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -128,9 +128,6 @@ public class Analyzer {
             targetWordsCount.put(word, 1);
         }
     }
-
-
-
 
 
 }
