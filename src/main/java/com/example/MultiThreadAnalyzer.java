@@ -17,12 +17,16 @@ import java.util.concurrent.Future;
 public class MultiThreadAnalyzer extends QueryAnalyzer {
 
     private final ExecutorServiceProvider executorServiceProvider;
-    private final int BUFFER_SIZE;
+    private int BUFFER_SIZE = 1;
 
 
     public MultiThreadAnalyzer(ExecutorServiceProvider executorServiceProvider, int BUFFER_SIZE) {
         this.executorServiceProvider = executorServiceProvider;
         this.BUFFER_SIZE = BUFFER_SIZE;
+    }
+
+    public MultiThreadAnalyzer(ExecutorServiceProvider executorServiceProvider) {
+        this.executorServiceProvider = executorServiceProvider;
     }
 
     public Map<String, Integer> getTargetWordsCount() {
