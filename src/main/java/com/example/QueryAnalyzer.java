@@ -79,10 +79,7 @@ public abstract class QueryAnalyzer {
     }
 
     protected void processLine(String line) {
-        if (line == null) {
-            System.err.println("Line is null!");
-            return;
-        }
+
         String[] parts = line.split(QUERY_AND_DATE_SPLITTER);
         String query = parts[0];
         String date = parts[1];
